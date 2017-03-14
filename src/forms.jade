@@ -1,0 +1,21 @@
+extends _layouts/base
+
+include _modules/link/link
+
+block content
+  form(action="#" method="method")
+    p User name
+      input(type="text" placeholder="your user name")
+    p Satay logged in:
+      input(type="checkbox" checked)
+    p Under 18:
+      input(type="radio" name="age")
+    p Over 18:
+      input(type="radio" name="age")
+    p Favourite food:
+      select
+        option Pizza
+        option(selected) Ice Cream
+        option Whatever
+    p
+      input(type="submit" value="click me")
